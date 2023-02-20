@@ -1,0 +1,101 @@
+.overflow{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+
+.container-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 95%;
+  height: 100%;
+}
+
+.music-info{
+  width:20%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.music-info img{
+  aspect-ratio : 1 / 1;
+  height: 100%;
+  margin-right: 15px;
+}
+
+.name-and-artist{
+  max-width: 60%;
+  margin-right: 10px;
+}
+
+.name{
+  font-weight: 600;
+}
+
+.artist{
+  font-weight: 100;
+  font-size: 12px;
+}
+
+a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+p{font-size: 15px;}
+
+.active{
+  color:#1FDF64;
+}
+
+.like-button{
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.player{
+  width:40%;
+  height: 60%;
+}
+
+.player-buttons{
+  width:60%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  font-size: 20px;
+}
+
+.player-button{
+  color:#AFAFAF;
+}
+
+.player-button:hover{
+  color:white;
+}
+
+.fa-circle-play{
+  font-size: 40px;
+  color: white;
+}
+
+.timeline{
+  width:100%;
+}
+
+.timeline input{
+  width:100%;
+}
+
+.other-options{
+  width:20%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
