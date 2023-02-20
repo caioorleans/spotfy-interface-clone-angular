@@ -10,6 +10,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { BibliotecaComponent } from './pages/biblioteca/biblioteca.component';
 import { VerticalCardComponent } from './components/vertical-card/vertical-card.component';
+import { RecepcaoComponent } from './pages/inicio/recepcao/recepcao.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { VerticalCardComponent } from './components/vertical-card/vertical-card.
     InicioComponent,
     BuscarComponent,
     BibliotecaComponent,
-    VerticalCardComponent
+    VerticalCardComponent,
+    RecepcaoComponent
   ],
   imports: [
     BrowserModule,
