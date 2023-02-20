@@ -1,0 +1,29 @@
+.lateral-menu{
+  margin: 25px;
+  width:225px;
+  height: 100%;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.title h1{
+  letter-spacing: 0;
+}
+
+.title h1 span{
+  font-size: 10px;
+  align-self: flex-start;
+}
+
+.title i{
+  margin-right: 5px;
+}
+
+li{
+  margin-bottom: 15px;
+}

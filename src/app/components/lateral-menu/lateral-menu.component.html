@@ -1,1 +1,19 @@
-<p>lateral-menu works!</p>
+<div class="lateral-menu">
+  <div class="title">
+    <i class="fa-brands fa-spotify fa-3x"></i>
+    <h1>Spotify<span>&reg;</span></h1>
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <app-buttons [icon]="'fa-solid fa-house'" [nome]="'Início'" [link]="'/'"></app-buttons>
+      </li>
+      <li>
+        <app-buttons [icon]="'fa-solid fa-magnifying-glass'" [nome]="'Buscar'" [link]="'/buscar'"></app-buttons>
+      </li>
+      <li>
+        <app-buttons [icon]="'fa-solid fa-layer-group'" [nome]="'Sua Biblioteca'" [link]="'/biblioteca'"></app-buttons>
+      </li>
+    </ul>
+  </nav>
+</div>

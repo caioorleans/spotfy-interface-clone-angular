@@ -1,6 +1,57 @@
+@font-face {
+  font-family: 'Gotham';
+    src: url('assets/fonts/Gotham-Book.eot'); /* IE9 Compat Modes */
+    src: url('assets/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('assets/fonts/Gotham-Book.woff2') format('woff2'), /* Super Modern Browsers */
+        url('assets/fonts/Gotham-Book.woff') format('woff'), /* Pretty Modern Browsers */
+        url('assets/fonts/Gotham-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('assets/fonts/Gotham-Book.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+    src: url('assets/fonts/Gotham-Light.eot'); /* IE9 Compat Modes */
+    src: url('assets/fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('assets/fonts/Gotham-Light.woff2') format('woff2'), /* Super Modern Browsers */
+        url('assets/fonts/Gotham-Light.woff') format('woff'), /* Pretty Modern Browsers */
+        url('assets/fonts/Gotham-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('assets/fonts/Gotham-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+    src: url('assets/fonts/Gotham-Medium.eot'); /* IE9 Compat Modes */
+    src: url('assets/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('assets/fonts/Gotham-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+        url('assets/fonts/Gotham-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+        url('assets/fonts/Gotham-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('assets/fonts/Gotham-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+    src: url('assets/fonts/Gotham-bold.eot'); /* IE9 Compat Modes */
+    src: url('assets/fonts/Gotham-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('assets/fonts/Gotham-bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('assets/fonts/Gotham-bold.woff') format('woff'), /* Pretty Modern Browsers */
+        url('assets/fonts/Gotham-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('assets/fonts/Gotham-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-weight: 700;
+    font-style: normal;
+}
+
 *{
   margin:0;
   padding: 0;
   color:white;
+  font-family: 'Gotham';
+  list-style: none;
+  text-decoration: none;
 }
 
