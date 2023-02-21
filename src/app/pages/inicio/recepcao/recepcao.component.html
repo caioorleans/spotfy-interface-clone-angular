@@ -2,7 +2,7 @@
   <h2>{{daytimeMessage}}</h2>
   <div class="container-playlists">
     <div class="container-playlist" *ngFor="let playlist of playlists">
-      <app-vertical-card  [text]="playlist.name" [img]="playlist.img"></app-vertical-card>
+      <app-horizontal-card  [text]="playlist.name" [img]="playlist.img"></app-horizontal-card>
     </div>
   </div>
 </article>

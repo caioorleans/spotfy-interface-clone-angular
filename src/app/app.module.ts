@@ -9,7 +9,7 @@ import { ButtonsComponent } from './components/lateral-menu/buttons/buttons.comp
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { BibliotecaComponent } from './pages/biblioteca/biblioteca.component';
-import { VerticalCardComponent } from './components/vertical-card/vertical-card.component';
+import { HorizontalCardComponent } from './components/horizontal-card/horizontal-card.component';
 import { RecepcaoComponent } from './pages/inicio/recepcao/recepcao.component';
 
 @NgModule({
@@ -21,7 +21,7 @@ import { RecepcaoComponent } from './pages/inicio/recepcao/recepcao.component';
     InicioComponent,
     BuscarComponent,
     BibliotecaComponent,
-    VerticalCardComponent,
+    HorizontalCardComponent,
     RecepcaoComponent
   ],
   imports: [

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { VerticalCardComponent } from './vertical-card.component';
+import { HorizontalCardComponent } from './horizontal-card.component';
 
-describe('VerticalCardComponent', () => {
-  let component: VerticalCardComponent;
-  let fixture: ComponentFixture<VerticalCardComponent>;
+describe('HorizontalCardComponent', () => {
+  let component: HorizontalCardComponent;
+  let fixture: ComponentFixture<HorizontalCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ VerticalCardComponent ]
+      declarations: [ HorizontalCardComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(VerticalCardComponent);
+    fixture = TestBed.createComponent(HorizontalCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
