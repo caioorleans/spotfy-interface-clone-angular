@@ -2,7 +2,7 @@ article{
   height: 80px;
   width: 100%;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.205);
+  background-color: rgba(255, 255, 255, 0.082);
   transition-duration: 0.5s;
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@ article{
 }
 
 article:hover{
-  background-color: rgba(255, 255, 255, 0.349);
+  background-color: rgba(255, 255, 255, 0.205);
 }
 
 .image{
