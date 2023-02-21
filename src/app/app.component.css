@@ -6,6 +6,7 @@
 .whole-page{
   height:100vh;
   overflow-y: hidden;
+  min-width: 900px;
 }
 
 .menu-and-page{

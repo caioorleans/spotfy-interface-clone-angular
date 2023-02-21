@@ -13,6 +13,7 @@ import { HorizontalCardComponent } from './components/horizontal-card/horizontal
 import { RecepcaoComponent } from './pages/inicio/recepcao/recepcao.component';
 import { VerticalCardComponent } from './components/vertical-card/vertical-card.component';
 import { OutrasPlaylistsComponent } from './pages/inicio/outras-playlists/outras-playlists.component';
+import { GreenPlayButtonComponent } from './components/green-play-button/green-play-button.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { OutrasPlaylistsComponent } from './pages/inicio/outras-playlists/outras
     HorizontalCardComponent,
     RecepcaoComponent,
     VerticalCardComponent,
-    OutrasPlaylistsComponent
+    OutrasPlaylistsComponent,
+    GreenPlayButtonComponent
   ],
   imports: [
     BrowserModule,

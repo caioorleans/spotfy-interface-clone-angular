@@ -4,8 +4,6 @@
   </div>
   <h3 class="name">{{text}}</h3>
   <div class="play-button-container container-flex-center">
-    <div class="play-button container-flex-center" [ngStyle]="{opacity: opacity}">
-      <i class="fa-solid fa-play"></i>
-    </div>
+    <app-green-play-button [opacity]="opacity"></app-green-play-button>
   </div>
 </article>

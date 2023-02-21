@@ -1,0 +1,26 @@
+.play-button{
+  width:50px;
+  height:50px;
+  border-radius: 25px;
+  background-color: #1FDF64;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor:default;
+  transition-duration: 0.5s;
+}
+
+.play-button:hover{
+  box-shadow: none;
+  width:52px;
+  height:52px;
+  border-radius: 26px;
+}
+
+.play-button i{
+  color:black;
+}
+
+.container-flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
