@@ -11,6 +11,8 @@ import { BuscarComponent } from './pages/buscar/buscar.component';
 import { BibliotecaComponent } from './pages/biblioteca/biblioteca.component';
 import { HorizontalCardComponent } from './components/horizontal-card/horizontal-card.component';
 import { RecepcaoComponent } from './pages/inicio/recepcao/recepcao.component';
+import { VerticalCardComponent } from './components/vertical-card/vertical-card.component';
+import { OutrasPlaylistsComponent } from './pages/inicio/outras-playlists/outras-playlists.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { RecepcaoComponent } from './pages/inicio/recepcao/recepcao.component';
     BuscarComponent,
     BibliotecaComponent,
     HorizontalCardComponent,
-    RecepcaoComponent
+    RecepcaoComponent,
+    VerticalCardComponent,
+    OutrasPlaylistsComponent
   ],
   imports: [
     BrowserModule,

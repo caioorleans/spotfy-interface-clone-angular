@@ -1,4 +1,4 @@
-section{
+article{
   height: 80px;
   width: 100%;
   border-radius: 5px;
@@ -10,7 +10,7 @@ section{
   cursor: pointer;
 }
 
-section:hover{
+article:hover{
   background-color: rgba(255, 255, 255, 0.349);
 }
 

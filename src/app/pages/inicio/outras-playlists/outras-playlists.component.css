@@ -5,20 +5,17 @@ article{
 }
 
 article h2{
-  font-size: 30px;
+  font-size: 22px;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
-.container-playlists{
-  width: 100%;
+.cards{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-.container-playlist{
-  width:32%;
-  margin-bottom: 10px;
+.container-card{
+  width:18%;
 }
