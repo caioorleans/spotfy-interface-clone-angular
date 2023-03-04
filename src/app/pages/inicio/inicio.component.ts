@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SectionsService } from 'src/app/services/sections.service';
+import { ISectionCompleta } from 'src/model/section';
 
 @Component({
   selector: 'app-inicio',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
+  sections:ISectionCompleta[] = [];
+
+  constructor(private sectionService:SectionsService) { }
 
   ngOnInit(): void {
+    this.sections = this.sectionService.getSections();
   }
 
 }

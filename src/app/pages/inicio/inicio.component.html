@@ -1,7 +1,4 @@
 <div class="container">
   <app-recepcao></app-recepcao>
-  <app-outras-playlists></app-outras-playlists>
-  <app-outras-playlists></app-outras-playlists>
-  <app-outras-playlists></app-outras-playlists>
-  <app-outras-playlists></app-outras-playlists>
+  <app-outras-playlists *ngFor="let section of sections" [section]="section"></app-outras-playlists>
 </div>

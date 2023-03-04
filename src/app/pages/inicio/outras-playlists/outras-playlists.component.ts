@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ISectionCompleta } from 'src/model/section';
 
 @Component({
   selector: 'app-outras-playlists',
@@ -7,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class OutrasPlaylistsComponent implements OnInit {
 
-  @Input() titulo:string="Suas playlists";
+  @Input() section?:ISectionCompleta;
 
   constructor() { }
 

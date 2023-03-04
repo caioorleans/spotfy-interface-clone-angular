@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IPlaylistIncompleta } from 'src/model/playlist';
 
 @Component({
   selector: 'app-vertical-card',
@@ -7,8 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class VerticalCardComponent implements OnInit {
 
+  @Input() playlist?:IPlaylistIncompleta;
+
   opacity:number = 0;
-  imgUrl:string = "https://www.vagalume.com.br/taylor-swift/discografia/red-10.webp"
 
   constructor() { }
 

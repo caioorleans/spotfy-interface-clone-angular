@@ -1,7 +1,12 @@
 <article (mouseenter)="opacity = 1" (mouseleave)="opacity = 0">
-  <div class="img-container" [ngStyle]="{'background':'url(' + imgUrl + ') no-repeat 0 0 / cover'}">
+  <div class="img-container" [ngStyle]="{'background':'url(' + playlist?.cape + ') no-repeat 0 0 / cover'}">
     <app-green-play-button [ngClass]="opacity == 1 ? 'green-button-show' : 'green-button-hide'" [opacity]="opacity"></app-green-play-button>
   </div>
-  <h3 class="overflow">Muito Red</h3>
-  <p class="overflow">Taylor swift</p>
+  <h3 class="overflow">{{playlist?.title}}</h3>
+  <p class="overflow">
+    <span *ngFor="let artist of playlist?.mainArtists, last as isLast">
+      {{artist}}
+      <span *ngIf="!isLast">,</span>
+    </span>
+  </p>
 </article>
