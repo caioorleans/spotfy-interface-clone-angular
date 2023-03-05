@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { IPlaylistIncompleta } from 'src/model/playlist';
 
 @Component({
   selector: 'app-horizontal-card',
@@ -7,8 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HorizontalCardComponent implements OnInit {
 
-  @Input() text?:string;
-  @Input() img?:string = "https://www.vagalume.com.br/taylor-swift/discografia/red-10.webp";
+  @Input() playlist?:IPlaylistIncompleta;
 
   opacity:number = 0;
 

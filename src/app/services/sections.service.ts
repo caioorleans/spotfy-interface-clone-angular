@@ -25,4 +25,8 @@ export class SectionsService {
     })
     return sectionsCompletas;
   }
+
+  getRecepcaoSection(){
+    return [1,2,3,4,5,6]
+  }
 }

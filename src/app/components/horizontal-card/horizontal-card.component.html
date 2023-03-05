@@ -1,8 +1,8 @@
 <article (mouseenter)="opacity = 1" (mouseleave)="opacity = 0">
   <div class="image">
-    <img [src]="img">
+    <img [src]="playlist?.cape">
   </div>
-  <h3 class="name">{{text}}</h3>
+  <h3 class="name">{{playlist?.title}}</h3>
   <div class="play-button-container container-flex-center">
     <app-green-play-button [opacity]="opacity"></app-green-play-button>
   </div>

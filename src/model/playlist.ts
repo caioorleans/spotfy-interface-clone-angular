@@ -24,4 +24,5 @@ export const playlists = [
   {id: 3, title: "All The Time", cape: "./assets/images/allthetime.png", mainArtists: ["Zara Larsson"], idMusics: [11,12,9,10,1,2]},
   {id: 4, title: "Tusa", cape: "./assets/images/tusa.png", mainArtists: ["KAROL G","Nicki Minaj"], idMusics: [11,12,9,10,1,2]},
   {id: 5, title: "Enemy", cape: "./assets/images/enemy.jpg", mainArtists: ["Imagine Dragons"], idMusics: [11,12,9,10,1,2]},
+  {id: 6, title: "Caipirices", cape: "./assets/images/snap.jpg", mainArtists: ["Imagine Dragons"], idMusics: [11,12,9,10,1,2]}
 ]

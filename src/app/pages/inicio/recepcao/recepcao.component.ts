@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DaytimeService } from 'src/app/services/daytime.service';
+import { PlaylistService } from 'src/app/services/playlist.service';
+import { SectionsService } from 'src/app/services/sections.service';
+import { IPlaylistCompleta, IPlaylistIncompleta } from 'src/model/playlist';
 
 @Component({
   selector: 'app-recepcao',
@@ -8,40 +11,23 @@ import { DaytimeService } from 'src/app/services/daytime.service';
 })
 export class RecepcaoComponent implements OnInit {
 
-  playlists = [
-    {
-      name: "Red",
-      img: "https://www.vagalume.com.br/taylor-swift/discografia/red-10.webp"
-    },
-    {
-      name: "1989",
-      img: "https://upload.wikimedia.org/wikipedia/pt/c/c3/1989_de_Taylor_Swift.jpg"
-    },
-    {
-      name: "Kiss me more",
-      img: "https://upload.wikimedia.org/wikipedia/pt/e/e3/Kiss_Me_More_-_Doja_Cat_feat_SZA.png"
-    },
-    {
-      name: "1989",
-      img: "https://upload.wikimedia.org/wikipedia/pt/c/c3/1989_de_Taylor_Swift.jpg"
-    },
-    {
-      name: "1989",
-      img: "https://upload.wikimedia.org/wikipedia/pt/c/c3/1989_de_Taylor_Swift.jpg"
-    },
-    {
-      name: "1989",
-      img: "https://upload.wikimedia.org/wikipedia/pt/c/c3/1989_de_Taylor_Swift.jpg"
-    }
-
-  ];
+  playlists: IPlaylistIncompleta[] = [];
 
   daytimeMessage:string = "";
 
-  constructor(private daytimeService: DaytimeService) { }
+  constructor(private daytimeService: DaytimeService,
+    private sectionService: SectionsService,
+    private playlistService: PlaylistService) { }
 
   ngOnInit(): void {
     this.setDaytimeMessage();
+    this.sectionService.getRecepcaoSection().forEach(
+      (id:number) => {
+        let playlist = this.playlistService.getPlaylistById(id);
+        if(playlist)
+          this.playlists.push(playlist);
+    });
+
   }
 
   setDaytimeMessage(){
