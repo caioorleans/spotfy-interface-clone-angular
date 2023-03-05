@@ -1,5 +1,6 @@
 <article (mouseenter)="opacity = 1" (mouseleave)="opacity = 0">
-  <div class="img-container" [ngStyle]="{'background':'url(' + playlist?.cape + ') no-repeat 0 0 / cover'}">
+  <div class="img-container">
+    <img [src]="playlist?.cape">
     <app-green-play-button [ngClass]="opacity == 1 ? 'green-button-show' : 'green-button-hide'" [opacity]="opacity"></app-green-play-button>
   </div>
   <h3 class="overflow">{{playlist?.title}}</h3>
