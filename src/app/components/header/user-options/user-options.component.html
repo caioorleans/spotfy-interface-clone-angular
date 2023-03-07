@@ -1,0 +1,15 @@
+<button (click)="ativo = ativo ? false : true;">
+  <img src="assets/images/user.jpg">
+  <p>Fulano de Tal</p>
+  <i class="fa-solid" [ngClass]="ativo ? 'fa-caret-up' : 'fa-caret-down'"></i>
+  <nav [ngStyle]="ativo ? {'display': 'block'} : {'display':'none'}">
+    <ul>
+      <li><app-option [nome]="'Conta'" [redirectTo]="true"></app-option></li>
+      <li><app-option [nome]="'Perfil'"></app-option></li>
+      <li><app-option [nome]="'Suporte'" [redirectTo]="true"></app-option></li>
+      <li><app-option [nome]="'Baixar'" [redirectTo]="true"></app-option></li>
+      <li><app-option [nome]="'Configurações'"></app-option></li>
+      <li><app-option [nome]="'Sair'" [last]="true"></app-option></li>
+    </ul>
+  </nav>
+</button>

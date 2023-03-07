@@ -1,3 +1,24 @@
 .container__header{
-  height: 60px;
+  height: 70px;
+  width: calc(100% - 275px);
+  position:fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content__header{
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.margin-right{
+  margin-right: 15px;
+}
+
+.user-options{
+  margin-left: auto;
 }

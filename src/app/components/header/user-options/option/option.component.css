@@ -1,0 +1,35 @@
+div{
+  width: 240px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div:hover{
+  background-color: #686868;
+}
+
+p{
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+i{
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.last{
+  border-radius: 0;
+  border-top: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+.last:hover{
+  border-radius: 5px;
+  border-top: 0;
+}

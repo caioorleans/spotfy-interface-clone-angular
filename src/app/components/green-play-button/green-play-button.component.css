@@ -12,8 +12,7 @@
 
 .play-button:hover{
   box-shadow: none;
-  width:52px;
-  height:52px;
+  scale:1.1;
   border-radius: 26px;
 }
 

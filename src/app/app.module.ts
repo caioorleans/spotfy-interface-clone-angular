@@ -15,6 +15,9 @@ import { VerticalCardComponent } from './components/vertical-card/vertical-card.
 import { OutrasPlaylistsComponent } from './pages/inicio/outras-playlists/outras-playlists.component';
 import { GreenPlayButtonComponent } from './components/green-play-button/green-play-button.component';
 import { HeaderComponent } from './components/header/header.component';
+import { NavButtonsHeaderComponent } from './components/header/nav-buttons-header/nav-buttons-header.component';
+import { UserOptionsComponent } from './components/header/user-options/user-options.component';
+import { OptionComponent } from './components/header/user-options/option/option.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { HeaderComponent } from './components/header/header.component';
     VerticalCardComponent,
     OutrasPlaylistsComponent,
     GreenPlayButtonComponent,
-    HeaderComponent
+    HeaderComponent,
+    NavButtonsHeaderComponent,
+    UserOptionsComponent,
+    OptionComponent
   ],
   imports: [
     BrowserModule,
