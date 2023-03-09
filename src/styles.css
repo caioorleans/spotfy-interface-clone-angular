@@ -55,6 +55,10 @@
   text-decoration: none;
 }
 
+body{
+  --navbar-scroll: transparent;
+ }
+
 full-width{
   width: 100%;
 }

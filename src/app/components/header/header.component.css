@@ -6,6 +6,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--navbar-scroll);
+  transition: background-color 1s ease;
 }
 
 .content__header{

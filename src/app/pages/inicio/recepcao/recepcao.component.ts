@@ -17,7 +17,9 @@ export class RecepcaoComponent implements OnInit {
 
   constructor(private daytimeService: DaytimeService,
     private sectionService: SectionsService,
-    private playlistService: PlaylistService) { }
+    private playlistService: PlaylistService) {
+
+  }
 
   ngOnInit(): void {
     this.setDaytimeMessage();
@@ -27,7 +29,6 @@ export class RecepcaoComponent implements OnInit {
         if(playlist)
           this.playlists.push(playlist);
     });
-
   }
 
   setDaytimeMessage(){

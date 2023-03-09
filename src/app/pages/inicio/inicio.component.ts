@@ -15,6 +15,10 @@ export class InicioComponent implements OnInit {
 
   ngOnInit(): void {
     this.sections = this.sectionService.getSections();
+
   }
+
+
+
 
 }
