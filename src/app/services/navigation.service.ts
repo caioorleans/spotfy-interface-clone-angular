@@ -23,8 +23,6 @@ export class NavigationService {
           this.index++;
           this.setStat();
         }
-        console.log("index: " + this.index);
-        console.log(this.routes);
         this.buttonClicked = false;
       }
     });
