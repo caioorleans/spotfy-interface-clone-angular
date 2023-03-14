@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, NavigationExtras, Router } from '@angular/router';
+import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
   selector: 'app-buttons',
@@ -11,10 +12,11 @@ export class ButtonsComponent implements OnInit {
   @Input() nome?:string;
   @Input() icon?:string;
   @Input() link:string = "/";
+  @Input() extras?:NavigationExtras;
 
   ativo:string = "ativo";
 
-  constructor(private router:Router) {
+  constructor(private router:Router, public ns:NavigationService) {
 
   }
 

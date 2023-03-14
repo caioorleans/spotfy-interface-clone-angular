@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationService} from 'src/app/services/navigation.service';
 
 @Component({
   selector: 'app-nav-buttons-header',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavButtonsHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public ns: NavigationService) { }
 
   ngOnInit(): void {
+
   }
 
 }
