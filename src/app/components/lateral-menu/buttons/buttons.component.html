@@ -1,6 +1,6 @@
-<a #estado [ngClass]="ativo" [routerLink]="link">
+<a [ngClass]="ns.url === link ? 'ativo' : 'inativo'" [routerLink]="link">
   <div>
-    <i  class="estado" [ngClass]="[icon,ativo]"></i>
+    <i [ngClass]="[icon,ns.url === link ? 'ativo' : 'inativo']"></i>
   </div>
   {{nome}}
 </a>

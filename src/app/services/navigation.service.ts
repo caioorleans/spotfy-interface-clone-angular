@@ -11,6 +11,7 @@ export class NavigationService {
   private buttonClicked:boolean = false;
   first:boolean = true;
   last:boolean = true;
+  url:string = "";
 
   constructor(private router:Router) {
     this.router.events.subscribe((event) => {
@@ -23,6 +24,7 @@ export class NavigationService {
           this.index++;
           this.setStat();
         }
+        this.url = this.routes[this.index];
         this.buttonClicked = false;
       }
     });
