@@ -18,6 +18,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavButtonsHeaderComponent } from './components/header/nav-buttons-header/nav-buttons-header.component';
 import { UserOptionsComponent } from './components/header/user-options/user-options.component';
 import { OptionComponent } from './components/header/user-options/option/option.component';
+import { SearchBarComponent } from './components/header/search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { OptionComponent } from './components/header/user-options/option/option.
     HeaderComponent,
     NavButtonsHeaderComponent,
     UserOptionsComponent,
-    OptionComponent
+    OptionComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,

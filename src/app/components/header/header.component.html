@@ -1,8 +1,13 @@
 <div class="full-width container__header">
   <div class="content__header">
     <app-nav-buttons-header></app-nav-buttons-header>
-    <app-green-play-button class="margin-right" [opacity]="0"></app-green-play-button>
-    <h2 class="margin-right" [ngStyle]="{opacity: 0}">O rato roeu a roupa do rei de roma</h2>
+    <div class="content-by-page__header" *ngIf="ns.url.includes('/playlist')">
+      <app-green-play-button class="margin-right" [opacity]="1"></app-green-play-button>
+      <h2 class="margin-right" [ngStyle]="{opacity: 1}">O rato roeu a roupa do rei de roma</h2>
+    </div>
+    <div class="content-by-page__header" *ngIf="ns.url.includes('/buscar')">
+      <app-search-bar></app-search-bar>
+    </div>
     <app-user-options class="user-options"></app-user-options>
   </div>
 </div>
